@@ -1,22 +1,22 @@
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import text
+import logging
 
 db = SQLAlchemy()
+logging.basicConfig(filename='registro.log', level=logging.ERROR)
 
-class User(db.Model):
-    __tablename__ = 'test'
+class Departments(db.Model):
+    __tablename__ = 'departments'
 
     correlativo = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(50), nullable=False) 
-    #created_at = db.Column(db.DateTime(), nullable=False, default=db.func.current_timestamp())
-    created_at = db.Column(db.String(10), nullable=False)
-    
+    id = db.Column(db.Integer, nullable=False)
+    department = db.Column(db.String(50), nullable=False) 
+
     @classmethod
-    def create(cls, usernames):
-        #user = User(username=username)
-        user = [User(username=username["username"], created_at=username["created_at"] ) for username in usernames]
-        #return user.save()
-        return User.save_all(user)
+    def create(cls, departments):
+        department = [Departments(id=department["id"],department=department["department"] ) for department in departments]
+        return Departments.save_all(department)
     
     def save(self):
          try:
@@ -34,20 +34,31 @@ class User(db.Model):
             return objects
         except Exception as e:
             db.session.rollback()
-            print(f"Error: {e}")
+            logging.error(f"Error during transaction: {e}")
+            return False
+        
+    def clean_table():
+        try:
+            db.session.query(Departments).delete()
+            db.session.commit()
+            return True
+        except Exception as e:
+            db.session.rollback()
             return False
 
-class User1(db.Model):
-    __tablename__ = 'test_nuevo'
 
-    id_nuevo = db.Column(db.Integer, primary_key=True)
-    username_nuevo = db.Column(db.String(50), nullable=False) 
-    created_at_nuevo = db.Column(db.DateTime(), nullable=False, default=db.func.current_timestamp())
+
+class Jobs(db.Model):
+    __tablename__ = 'jobs'
+
+    correlativo = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, nullable=False)
+    job = db.Column(db.String(50), nullable=False) 
 
     @classmethod
-    def create(cls, usernames):
-        user1 = [User1(username_nuevo=username["username_nuevo"] ) for username in usernames]
-        return User1.save_all(user1)
+    def create(cls, jobs):
+        job = [Jobs(id=job["id"],job=job["job"] ) for job in jobs]
+        return Jobs.save_all(job)
     
     def save(self):
          try:
@@ -65,12 +76,63 @@ class User1(db.Model):
             return objects
         except Exception as e:
             db.session.rollback()
-            print(f"Error: {e}")
+            logging.error(f"Error during transaction: {e}")
             return False
+        
+    def clean_table():
+        try:
+            db.session.query(Jobs).delete()
+            db.session.commit()
+            return True
+        except Exception as e:
+            db.session.rollback()
+            return False
+        
 
-# class User2(db.Model):
-#     __tablename__ = 'test_cambio'
 
-#     id_cambio = db.Column(db.Integer, primary_key=True)
-#     username_cambio = db.Column(db.String(50), nullable=False) 
-#     created_at_cambio = db.Column(db.DateTime(), nullable=False, default=db.func.current_timestamp())
+class Hired_employees(db.Model):
+    __tablename__ = 'hired_employees'
+
+    correlativo = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, nullable=False)
+    name = db.Column(db.String(50), nullable=False)
+    datetime = db.Column(db.String(20), nullable=False)
+    department_id = db.Column(db.Integer, nullable=False)
+    job_id = db.Column(db.Integer, nullable=False) 
+
+    @classmethod
+    def create(cls, hired_employees):
+        hired_employee = [Hired_employees(id=hired_employee["id"],
+                                          name=hired_employee["name"],
+                                          datetime=hired_employee["datetime"],
+                                          department_id=hired_employee["department_id"],
+                                          job_id=hired_employee["job_id"] ) for hired_employee in hired_employees]
+        return Hired_employees.save_all(hired_employee)
+    
+    def save(self):
+         try:
+            db.session.add(self)
+            db.session.commit()
+            return self
+         except:
+             return False
+         
+    @staticmethod
+    def save_all(objects):
+        try:
+            db.session.add_all(objects)
+            db.session.commit()
+            return objects
+        except Exception as e:
+            db.session.rollback()
+            logging.error(f"Error during transaction: {e}")
+            return False
+    
+    def clean_table():
+        try:
+            db.session.query(Hired_employees).delete()
+            db.session.commit()
+            return True
+        except Exception as e:
+            db.session.rollback()
+            return False
