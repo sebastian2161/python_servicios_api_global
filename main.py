@@ -3,8 +3,9 @@ from flask import jsonify
 from config import config
 from flask_sqlalchemy import SQLAlchemy
 from models import db
-from models import User
-from models import User1
+from models import Departments
+from models import Jobs
+from models import Hired_employees
 import sqlite3
 import json, requests
 
@@ -22,52 +23,46 @@ def create_app(enviroment):
 enviroment = config['development']
 app = create_app(enviroment)
 
-# @app.route('/api/v1/connect', methods=['GET'])
-# def connect_db():
-#     con = sqlite3.connect('instance/dataweb.db')
-#     cursor = con.cursor()
-#     cursor.execute("SELECT * FROM test") 
-#     data= cursor.fetchall()
-#     response = {'message': data}
-#     return jsonify(response)
-
-
-# @app.route('/api/v1/users', methods=['GET'])
-# def get_users():
-#     response = {'message': 'success'}
-#     return jsonify(response)
-
-
 @app.route('/api/v1/load', methods=['POST'])
 def load_user():
-    list_control_users=[]
-    list_control_users1=[]
+    list_control_department=[]
+    list_control_job=[]
+    list_control_hire=[]
     json = request.get_json(force=True)
-    print(json)
+    #print(json)
     
     count_1=0
-    for i in json[0]["users"]:
+    for i in json[0]["departments"]:
         if count_1 <=1000:
-            list_control_users.append({"username":i["username"], "created_at":i["created_at"]})
+            list_control_department.append({"id":i["id"], "department":i["department"]})
             count_1+=1
 
     count_2=0
-    for i in json[1]["users1"]:
-        if count_2 <=1000:
-            list_control_users1.append({"username_nuevo":i["tipo_house"]})
-            count_2+=1
+    for i in json[1]["jobs"]:
+         if count_2 <=1000:
+             list_control_job.append({"id":i["id"], "job":i["job"] })
+             count_2+=1
 
-    #if json.get('username') is None:
-    #    return jsonify({'message': 'Bad request'})
-    #user = User.create(json['username'])
+    count_3=0
+    for i in json[2]["hired_employees"]:
+         if count_3 <=1000:
+             list_control_hire.append({"id":i["id"], "name":i["name"], "datetime":i["datetime"], "department_id":i["department_id"], "job_id":i["job_id"] })
+             count_3+=1
 
-    if len(list_control_users)>0 and len(list_control_users)<=1000:
-        user =  User.create(list_control_users)
+    if len(list_control_department)>0 and len(list_control_department)<=1000:
+        Departments.clean_table()
+        department =  Departments.create(list_control_department)
 
-    if len(list_control_users1)>0 and len(list_control_users1)<=1000:
-        user1 =  User1.create(list_control_users1)
+    if len(list_control_job)>0 and len(list_control_job)<=1000:
+         Jobs.clean_table()
+         job = Jobs.create(list_control_job)
 
-    return jsonify({'user': json})
+    if len(list_control_hire)>0 and len(list_control_hire)<=1000:
+         Hired_employees.clean_table()
+         hire = Hired_employees.create(list_control_hire)
+
+    response = {'message': 'success'}
+    return jsonify(response)
 
 
 

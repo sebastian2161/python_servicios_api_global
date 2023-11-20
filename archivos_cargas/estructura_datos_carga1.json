@@ -1,0 +1,19 @@
+[{"departments":[
+  {"id": 1, "department":"Product Management"},
+  {"id": 2, "department":"Sales"},
+  {"id": 3, "department":"Research and Development"}]},
+  
+  {"jobs":[
+      {"id":1,"job":"Marketing Assistant"},
+      {"id":2,"job":"VP Sales"},
+      {"id":3,"job":"Biostatistician IV"},
+      {"id":4,"job":"Account Representative II"},
+      {"id":5,"job":"VP Marketing"}]},
+
+  {"hired_employees":[
+      {"id":1,"name":"Harold Vogt","datetime":"2021-11-07T02:48:42Z","department_id":2,"job_id":96  },
+      {"id":2,"name":"Ty Hofer","datetime":"2021-05-30T05:43:46Z","department_id":8,"job_id":-1 },
+      {"id":3,"name":"Lyman Hadye","datetime":"2021-09-01T23:27:38Z","department_id":5,"job_id":52  },
+      {"id":4,"name":"Lotti Crowthe","datetime":"2021-10-01T13:04:21Z","department_id":12,"job_id":71  }]}
+
+]
