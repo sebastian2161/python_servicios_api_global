@@ -1,2 +1,13 @@
 # python_servicios_api_global
  Desarrollo de servicios end-point
+
+Paso 1: Deben ejecutar el formato_csv_json.py, para crear el archivo estructura_datos_postman.json. El archivo json debe cargarse en la Plataforma Postman y realizar la configuracion con el metodo POST - http://127.0.0.1:3000/api/v1/load. Este archivo json es creado utilizando los archivos.csv departments, jobs y hired_employees.
+
+Paso 2: Luego deben ejecutar main.py, para desplegar el servidor web de Flask, para poder utilizar los servicios end-point.
+
+Paso 3: Luego de haber realizado los pasos anteriores. Deben volver a la Plataforma Postman, para ejecutar el servicio end-point http://127.0.0.1:3000/api/v1/load y cargar las tablas departments, jobs y hired_employees en la base de datos dataweb.db en Sqlite portable. 
+
+Paso 4: Una vez creadas tablas mencionadas, la funcionalidad backup_tablas.py estara disponible, para respaldarlas en el formato avro, en la carpeta backup_tablas.
+
+Paso 5: Luego de tener las tablas en archivos avro, la funcionalidad restaurar_tabla.py estara disponible, para restaurarlas en la base de datos dataweb.db en Sqlite portable.
+
