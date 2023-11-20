@@ -11,6 +11,6 @@ Paso 4: Una vez creadas las tablas mencionadas, la funcionalidad backup_tablas.p
 
 Paso 5: Luego de tener las tablas en archivos avro, la funcionalidad restaurar_tabla.py estara disponible, para restaurarlas en la base de datos dataweb.db en Sqlite portable.
 
-Paso 6: Las funcionalidades para las consultas del servicio end-point estan disponibles. 
+Paso 6: Las funcionalidades para las consultas de los siguientes servicios end-point estan disponibles. 
 metodo GET - http://127.0.0.1:3000/api/v1/query1, obtiene por trimestre la cantidad de empleados contratados por departaments y job del año 2021.
 metodo GET - http://127.0.0.1:3000/api/v1/query2, obtiene la cantidad de empleados contratados por departaments que son mayores al promedio de contrataciones del año 2021.
