@@ -1,0 +1,12 @@
+[{"users":[
+  {"username": "user105", "created_at":"2023-11-18"},
+  {"username": "user106", "created_at":"2023-11-18"},
+  {"username": "user107", "created_at":"2023-11-18"}]},
+  
+  {"users1":[
+      {"tipo_house":"xx1","modelo_house":"L1"},
+      {"tipo_house":"xx2","modelo_house":"L2"},
+      {"tipo_house":"xx3","modelo_house":"L3"},
+      {"tipo_house":"xx4","modelo_house":"L4"},
+      {"tipo_house":"xx5","modelo_house":"L5"}]}
+]
