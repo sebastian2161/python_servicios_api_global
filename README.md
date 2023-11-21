@@ -70,9 +70,9 @@ La version en la nube (cloud) se crea con una extension google chrome web store 
 
 --Paso 3: Pegar la siguiente consulta en el editor de texto para listar las tablas de la base de datos.
 
-   --.
-   SELECT `name`, `sql`
-   FROM `sqlite_master`
-   WHERE type='table';
+     --Crea el entorno virtual
+         SELECT `name`, `sql`
+         FROM `sqlite_master`
+         WHERE type='table';
 
 
