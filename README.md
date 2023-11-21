@@ -60,3 +60,6 @@ El archivo requirements con la lista de librerias fue creado
        werkzeug==3.0.1
        zipp==3.17.0
 
+       
+![image](https://github.com/sebastian2161/python_servicios_api_global/assets/50760678/7b8ffc45-181c-4065-a9f9-20fb2518524e)
+
