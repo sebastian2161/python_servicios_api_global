@@ -30,4 +30,6 @@ La version de python utilizada fue 3.9, en un entorno virtual utilizando los sig
     --Crea el entorno virtual
      python -m venv myenv
 
+El archivo requirements con la lista de librerias fue creado
+    --pip freeze > requirements.txt
 
