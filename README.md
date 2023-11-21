@@ -83,4 +83,4 @@ La version en la nube (cloud) se crea con una extension google chrome web store 
 
  Esta alternativa u opcion es para revisar los resultados de las tablas de la base de datos SQLite en la nube (cloud).
 
-
+NOTA: La rama main es la que tiene los ultimos cambios https://github.com/sebastian2161/python_servicios_api_globant/tree/main
