@@ -20,6 +20,7 @@ metodo GET - http://127.0.0.1:3000/api/v1/query2, obtiene la cantidad de emplead
 El desarrollo de los servicios endpoint, las funcionalidades de transformacion de formato, backup en archivos avro y restauracion de tablas, fueron en el sistema operativa windows 10.
 
 La version de python utilizada fue 3.9, en un entorno virtual utilizando los siguientes pasos:
+
     --Crea un directorio para el entorno virtual 
     mkdir venv
     
