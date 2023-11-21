@@ -60,7 +60,8 @@ El archivo requirements con la lista de librerias fue creado
        werkzeug==3.0.1
        zipp==3.17.0
 
-Para realizar la simulacion y pruebas de los servicios endpoint, fue utilizada la plataforma api postman (cloud), link: https://www.postman.com/, deben tener una cuenta creada para acceder a todas las funcionalidades. Para la configuracion del Metodo POST debe selecionar Body-->raw-->json
+Para realizar la simulacion y pruebas de los servicios endpoint, fue utilizada la plataforma api postman (cloud), link: https://www.postman.com/, deben tener una cuenta creada para acceder a todas las funcionalidades. 
+Para la configuracion del Metodo POST debe selecionar Body-->raw-->json
        
 La base de datos utilizada fue la version local de SQLite y en la nube (cloud).
 La version en la nube (cloud) se crea con una extension google chrome web store , link:https://chromewebstore.google.com/detail/sqlite-viewer/bpedjnknnoaegoaejefbodcdjmjkbbea?hl=es&pli=1
