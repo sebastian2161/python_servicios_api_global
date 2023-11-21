@@ -21,7 +21,7 @@ El desarrollo de los servicios endpoint, las funcionalidades de transformacion d
 
 La version de python utilizada fue 3.9, en un entorno virtual utilizando los siguientes pasos:
     --Crea un directorio para el entorno virtual 
-    --mkdir venv
+    mkdir venv
     
     --Entrar al directorio del entorno virtual
     cd venv
