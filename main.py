@@ -9,6 +9,8 @@ from models import Hired_employees
 import sqlite3
 import pandas as pd
 import json, requests
+import logging
+logging.basicConfig(filename='registro.log', level=logging.ERROR)
 
 
 def create_app(enviroment):
@@ -47,8 +49,14 @@ def load_user():
     count_3=0
     for i in json[2]["hired_employees"]:
          if count_3 < 1000:
-             list_control_hire.append({"id":i["id"], "name":i["name"], "datetime":i["datetime"], "department_id":i["department_id"], "job_id":i["job_id"] })
-             count_3+=1
+             try:
+                 if int(i["department_id"]) and int(i["job_id"]):
+                     list_control_hire.append({"id":i["id"], "name":i["name"], "datetime":i["datetime"], "department_id":i["department_id"], "job_id":i["job_id"] })
+                     count_3+=1
+             except Exception as e:
+                 logging.error(f"Error during transaction: {e}-Tabla hired_employees-id:{i}")
+                 pass
+
 
     if len(list_control_department)>0 and len(list_control_department)<=1000:
         Departments.clean_table()

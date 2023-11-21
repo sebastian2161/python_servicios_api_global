@@ -1,5 +1,7 @@
 import csv
 import json
+import logging
+logging.basicConfig(filename='registro.log', level=logging.ERROR)
 
 
 archivo_csv = 'archivos_cargas/departments.csv'
@@ -14,28 +16,32 @@ with open(archivo_csv, newline='', encoding='utf-8') as archivo:
     lector_csv = csv.reader(archivo)
     
     for fila in lector_csv:
-        
-        lista_departments.append({"id":int(fila[0]),"department":str(fila[1])})
+        try:
+            lista_departments.append({"id":int(fila[0]),"department":str(fila[1])})
+        except Exception as e:
+            logging.error(f"Error during transaction: {e}-Tabla departaments-id:{fila[0]}")
 
 with open(archivo_csv1, newline='', encoding='utf-8') as archivo1:
     lector_csv = csv.reader(archivo1)
     
     for fila in lector_csv:
-        
-        lista_jobs.append({"id":int(fila[0]),"job":str(fila[1])})
+        try:
+            lista_jobs.append({"id":int(fila[0]),"job":str(fila[1])})
+        except Exception as e:
+            logging.error(f"Error during transaction: {e}-Tabla jobs-id:{fila[0]}")
 
 with open(archivo_csv2, newline='', encoding='utf-8') as archivo2:
     lector_csv = csv.reader(archivo2)
     
     for fila in lector_csv:
-        
-        if fila[3]!='':
-            fila[3]=int(fila[3])
-
-        if fila[4]!='':
-            fila[4]=int(fila[4])
-
-        lista_hire.append({"id":int(fila[0]),"name":str(fila[1]),"datetime":str(fila[2]),"department_id":fila[3], "job_id":fila[4]  })
+        try:
+            if fila[3]!='':
+                fila[3]=int(fila[3])
+            if fila[4]!='':
+                fila[4]=int(fila[4])
+            lista_hire.append({"id":int(fila[0]),"name":str(fila[1]),"datetime":str(fila[2]),"department_id":fila[3], "job_id":fila[4]  })
+        except Exception as e:
+            logging.error(f"Error during transaction: {e}-Tabla hired_employees-id:{fila[0]}")
 
 estructura_datos_postman=[
     {"departments":lista_departments},

@@ -1,5 +1,6 @@
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import CheckConstraint
 from sqlalchemy.sql import text
 import logging
 
@@ -100,22 +101,35 @@ class Hired_employees(db.Model):
     department_id = db.Column(db.Integer, nullable=False)
     job_id = db.Column(db.Integer, nullable=False) 
 
+    # Restricción CHECK para asegurar sea un valor entero
+    __table_args__ = (
+        CheckConstraint('typeof(department_id) = "integer"', name='check_department_id_integer'),
+        CheckConstraint('typeof(job_id) = "integer"', name='check_job_id_integer')
+    )
+    
+
     @classmethod
     def create(cls, hired_employees):
         hired_employee = [Hired_employees(id=hired_employee["id"],
                                           name=hired_employee["name"],
                                           datetime=hired_employee["datetime"],
                                           department_id=hired_employee["department_id"],
-                                          job_id=hired_employee["job_id"] ) for hired_employee in hired_employees]
+                                          job_id=hired_employee["job_id"] ) for hired_employee in hired_employees]                                
         return Hired_employees.save_all(hired_employee)
     
     def save(self):
-         try:
-            db.session.add(self)
-            db.session.commit()
+        try:
+            for i in self:
+                try:
+                    db.session.add(i)
+                except Exception as e:
+                    logging.error(f"Error during transaction: {e}")
+                    return False
+                db.session.commit()
             return self
-         except:
-             return False
+        except Exception as e:
+            logging.error(f"Error during transaction: {e}")
+            return False
          
     @staticmethod
     def save_all(objects):

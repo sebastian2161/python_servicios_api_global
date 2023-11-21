@@ -27,6 +27,10 @@ def restaurar_tabla_avro(database_path, table_name, avro_file_path):
 
 if __name__ == "__main__":
     database_path = "instance/dataweb.db"
+
+    #Seleccionar la tabla que desea cargar cambiando los parametros de entrada de la funcion
+    # table_name --hired_employees, departments o jobs
+    # avro_file_path --backup_hire.avro, backup_departments.avro o backup_jobs.avro
     table_name = "hired_employees"
     avro_file_path = "backup_tablas/backup_hire.avro"
     restaurar_tabla_avro(database_path, table_name, avro_file_path)
