@@ -79,4 +79,6 @@ La version en la nube (cloud) se crea con una extension google chrome web store 
          SELECT * FROM jobs
          SELECT * FROM hired_employees
 
+ Esta alternativa u opcion es para revisar los resultados de las tablas de la base de datos SQLite en la nube (cloud).
+
 
