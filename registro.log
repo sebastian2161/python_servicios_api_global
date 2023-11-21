@@ -1,0 +1,408 @@
+ERROR:root:Error during transaction: invalid literal for int() with base 10: 'H'
+ERROR:root:Error during transaction: invalid literal for int() with base 10: 'H'-Tabla hired_employees
+ERROR:root:Error during transaction: invalid literal for int() with base 10: 'H'-Tabla hired_employees
+ERROR:root:Error during transaction: invalid literal for int() with base 10: 'H'-Tabla hired_employees-id 2
+ERROR:root:Error during transaction: invalid literal for int() with base 10: 'S'-Tabla departaments-id:S
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 07:34:20] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 07:46:43] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 07:53:41] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 07:58:25] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:02:13] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:10:11] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:15:03] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:18:59] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:20:43] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:22:28] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:23:52] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:26:09] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:29:12] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:33:14] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: (sqlite3.IntegrityError) CHECK constraint failed: check_job_id_integer
+[SQL: INSERT INTO hired_employees (id, name, datetime, department_id, job_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: (2, 'Ty Hofer', '2021-05-30T05:43:46Z', 8, '')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 08:47:46] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:00:04] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug: * Detected change in 'C:\\Users\\pc01_leones\\Desktop\\venv\\python_servicios_api_globant-main\\python_servicios_api_globant-main\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 2, 'name': 'Ty Hofer', 'datetime': '2021-05-30T05:43:46Z', 'department_id': 8, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 67, 'name': 'Thia Morican', 'datetime': '2021-03-10T19:27:10Z', 'department_id': '', 'job_id': 104}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 84, 'name': 'Ludvig Norwood', 'datetime': '2021-02-26T18:47:53Z', 'department_id': 3, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 87, 'name': 'Cirstoforo Martinetto', 'datetime': '2021-10-15T09:19:20Z', 'department_id': '', 'job_id': 84}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 97, 'name': 'Beltran Natte', 'datetime': '2021-11-01T05:12:01Z', 'department_id': '', 'job_id': 67}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 133, 'name': 'Jennine Wapol', 'datetime': '2022-01-24T14:45:57Z', 'department_id': '', 'job_id': 49}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 198, 'name': 'Carline Fryman', 'datetime': '2021-05-29T00:23:02Z', 'department_id': 5, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 207, 'name': 'Ahmad Fader', 'datetime': '2021-05-03T04:57:25Z', 'department_id': '', 'job_id': 66}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 216, 'name': 'Theobald Tzarkov', 'datetime': '2022-01-26T14:56:48Z', 'department_id': '', 'job_id': 87}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 393, 'name': 'Bogey Hanwell', 'datetime': '2022-01-05T17:29:34Z', 'department_id': 6, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 533, 'name': 'Tiertza Vanyashin', 'datetime': '2022-02-04T20:16:06Z', 'department_id': 3, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 685, 'name': 'Bruno Pales', 'datetime': '2022-01-16T19:23:39Z', 'department_id': '', 'job_id': 92}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 758, 'name': 'Dyanne Rainy', 'datetime': '2021-06-11T00:56:42Z', 'department_id': 8, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 792, 'name': 'Hetty Cawthery', 'datetime': '2022-01-21T11:08:04Z', 'department_id': 10, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 824, 'name': 'Kaitlynn Rannald', 'datetime': '2021-04-18T15:11:19Z', 'department_id': '', 'job_id': 64}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 832, 'name': 'Letta Paull', 'datetime': '2021-10-29T02:35:02Z', 'department_id': '', 'job_id': 122}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 932, 'name': 'Celeste Stops', 'datetime': '2021-02-07T22:14:01Z', 'department_id': 8, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 942, 'name': 'Joaquin Kamenar', 'datetime': '2021-11-29T11:54:05Z', 'department_id': '', 'job_id': 64}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 955, 'name': 'Shena Gore', 'datetime': '2021-08-16T21:25:08Z', 'department_id': 9, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 961, 'name': 'Lionello Andriesse', 'datetime': '2022-02-12T05:19:44Z', 'department_id': 8, 'job_id': ''}
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:03:05] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 2, 'name': 'Ty Hofer', 'datetime': '2021-05-30T05:43:46Z', 'department_id': 8, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 67, 'name': 'Thia Morican', 'datetime': '2021-03-10T19:27:10Z', 'department_id': '', 'job_id': 104}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 84, 'name': 'Ludvig Norwood', 'datetime': '2021-02-26T18:47:53Z', 'department_id': 3, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 87, 'name': 'Cirstoforo Martinetto', 'datetime': '2021-10-15T09:19:20Z', 'department_id': '', 'job_id': 84}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 97, 'name': 'Beltran Natte', 'datetime': '2021-11-01T05:12:01Z', 'department_id': '', 'job_id': 67}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 133, 'name': 'Jennine Wapol', 'datetime': '2022-01-24T14:45:57Z', 'department_id': '', 'job_id': 49}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 198, 'name': 'Carline Fryman', 'datetime': '2021-05-29T00:23:02Z', 'department_id': 5, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 207, 'name': 'Ahmad Fader', 'datetime': '2021-05-03T04:57:25Z', 'department_id': '', 'job_id': 66}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 216, 'name': 'Theobald Tzarkov', 'datetime': '2022-01-26T14:56:48Z', 'department_id': '', 'job_id': 87}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 393, 'name': 'Bogey Hanwell', 'datetime': '2022-01-05T17:29:34Z', 'department_id': 6, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 533, 'name': 'Tiertza Vanyashin', 'datetime': '2022-02-04T20:16:06Z', 'department_id': 3, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 685, 'name': 'Bruno Pales', 'datetime': '2022-01-16T19:23:39Z', 'department_id': '', 'job_id': 92}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 758, 'name': 'Dyanne Rainy', 'datetime': '2021-06-11T00:56:42Z', 'department_id': 8, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 792, 'name': 'Hetty Cawthery', 'datetime': '2022-01-21T11:08:04Z', 'department_id': 10, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 824, 'name': 'Kaitlynn Rannald', 'datetime': '2021-04-18T15:11:19Z', 'department_id': '', 'job_id': 64}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 832, 'name': 'Letta Paull', 'datetime': '2021-10-29T02:35:02Z', 'department_id': '', 'job_id': 122}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 932, 'name': 'Celeste Stops', 'datetime': '2021-02-07T22:14:01Z', 'department_id': 8, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 942, 'name': 'Joaquin Kamenar', 'datetime': '2021-11-29T11:54:05Z', 'department_id': '', 'job_id': 64}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 955, 'name': 'Shena Gore', 'datetime': '2021-08-16T21:25:08Z', 'department_id': 9, 'job_id': ''}
+ERROR:root:Error during transaction: invalid literal for int() with base 10: ''-Tabla hired_employees-id:{'id': 961, 'name': 'Lionello Andriesse', 'datetime': '2022-02-12T05:19:44Z', 'department_id': 8, 'job_id': ''}
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:16:38] "POST /api/v1/load HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 466-885-116
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:19:05] "GET /api/v1/query1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:19:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:19:27] "GET /api/v1/query2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:21:10] "GET /api/v1/query2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Nov/2023 09:21:19] "GET /api/v1/query1 HTTP/1.1" 200 -
