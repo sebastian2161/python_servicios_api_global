@@ -66,6 +66,6 @@ La version en la nube (cloud) se crea con una extension google chrome web store 
 
 --Paso 1: Debe añadir extension
 
---Paso 2: Debe subir la base de datos dataweb.db ubicada en la carpeta instancia
+--Paso 2: Debe subir la base de datos dataweb.db ubicada en la carpeta instancia, hacer click to load from your hard drive
 
 
