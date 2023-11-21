@@ -69,6 +69,7 @@ La version en la nube (cloud) se crea con una extension google chrome web store 
 --Paso 2: Debe subir la base de datos dataweb.db ubicada en la carpeta instancia, hacer click to load from your hard drive
 
 --Paso 3: Pegar la siguiente consulta en el editor de texto para listar las tablas de la base de datos.
+
    --.
    SELECT `name`, `sql`
    FROM `sqlite_master`
