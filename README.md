@@ -61,5 +61,10 @@ El archivo requirements con la lista de librerias fue creado
        zipp==3.17.0
 
        
-![image](https://github.com/sebastian2161/python_servicios_api_global/assets/50760678/7b8ffc45-181c-4065-a9f9-20fb2518524e)
+La base de datos utilizada fue la version local de SQLite y en la nube (cloud).
+La version en la nube (cloud) se crea con una extension google chrome web store , link:https://chromewebstore.google.com/detail/sqlite-viewer/bpedjnknnoaegoaejefbodcdjmjkbbea?hl=es&pli=1
+
+--Paso 1: Debe añadir extension
+--Paso 2: Debe subir la base de datos dataweb.db ubicada en la carpeta instancia
+
 
