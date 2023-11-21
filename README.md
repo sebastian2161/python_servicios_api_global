@@ -14,3 +14,19 @@ Paso 5: Luego de tener las tablas en archivos avro, la funcionalidad restaurar_t
 Paso 6: Las funcionalidades para las consultas de los siguientes servicios end-point estan disponibles. 
 metodo GET - http://127.0.0.1:3000/api/v1/query1, obtiene por trimestre la cantidad de empleados contratados por departaments y job del año 2021.
 metodo GET - http://127.0.0.1:3000/api/v1/query2, obtiene la cantidad de empleados contratados por departaments que son mayores al promedio de contrataciones del año 2021.
+
+
+# Especificaciones Tecnicas
+El desarrollo de los servicios endpoint, las funcionalidades de transformacion de formato, backup en archivos avro y restauracion de tablas, fueron en el sistema operativa windows 10.
+
+La version de python utilizada fue 3.9, en un entorno virtual utilizando los siguientes pasos:
+    --Crea un directorio para el entorno virtual 
+    --mkdir venv
+    
+    --Entrar al directorio del entorno virtual
+    cd venv
+
+    --Crea el entorno virtual
+     python -m venv myenv
+
+
