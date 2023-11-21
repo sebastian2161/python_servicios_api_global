@@ -6,7 +6,6 @@ archivo_csv = 'archivos_cargas/departments.csv'
 archivo_csv1= 'archivos_cargas/jobs.csv'
 archivo_csv2= 'archivos_cargas/hired_employees.csv'
 
-
 lista_departments = []
 lista_jobs = []
 lista_hire= []
@@ -51,6 +50,6 @@ nombre_archivo = "estructura_datos_postman.json"
 with open(nombre_archivo, 'w') as archivo:
     archivo.write(estructura_datos_postman)
 
-
+print("El archivo estructura_csv_json fue creado")
 
 
