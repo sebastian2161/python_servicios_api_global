@@ -1,5 +1,5 @@
 # Python_Servicios_API_Globant
- Desarrollo de servicios end-point
+ Desarrollo de servicios endpoint
 
 Paso 1: Deben ejecutar la funcionalidad formato_csv_json.py, para crear el archivo estructura_datos_postman.json. El archivo json debe cargarse en la Plataforma Postman y realizar la configuracion con el metodo POST - http://127.0.0.1:3000/api/v1/load. Este archivo json es creado utilizando los archivos.csv departments, jobs y hired_employees.
 
