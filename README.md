@@ -1,36 +1,34 @@
-# Python_Servicios_API_Globant
- Desarrollo de servicios endpoint
+# Python_Services_API_Globant
+ Development of endpoint services
 
-Paso 1: Deben ejecutar la funcionalidad formato_csv_json.py, para crear el archivo estructura_datos_postman.json. El archivo json debe cargarse en la Plataforma Postman y realizar la configuracion con el metodo POST - http://127.0.0.1:3000/api/v1/load. Este archivo json es creado utilizando los archivos.csv departments, jobs y hired_employees.
+Step 1: You must execute the formatting_csv_json.py functionality to create the structure_data_postman.json file. The json file must be uploaded to the Postman Platform and configured with the POST method - http://127.0.0.1:3000/api/v1/load . This json file is created using the departments, jobs and hired_employees.csv files.
 
-Paso 2: Luego deben ejecutar la funcionalidad main.py, para desplegar el servidor web de Flask, para poder utilizar los servicios endpoint.
+Step 2: Then they must execute the main.py functionality, to deploy the Flask web server, in order to use the endpoint services.
 
-Paso 3: Luego de haber realizado los pasos anteriores. Deben volver a la Plataforma Postman, para ejecutar el servicio endpoint http://127.0.0.1:3000/api/v1/load y cargar las tablas departments, jobs y hired_employees en la base de datos dataweb.db en Sqlite portable. 
+Step 3: After having completed the previous steps. They must return to the Postman Platform to run the endpoint service http://127.0.0.1:3000/api/v1/load and load the departments, jobs and hired_employees tables in the dataweb.db database in Sqlite portable. 
 
-Paso 4: Una vez creadas las tablas mencionadas, la funcionalidad backup_tablas.py estara disponible, para respaldarlas en el formato avro, en la carpeta backup_tablas.
+Step 4: Once the aforementioned tables have been created, the backup_tablas.py functionality will be available to backup them in the avro format, in the backup_tablas folder.
 
-Paso 5: Luego de tener las tablas en archivos avro, la funcionalidad restaurar_tabla.py estara disponible, para restaurarlas en la base de datos dataweb.db en Sqlite portable.
+Step 5: After having the tables in avro files, the restore_tabla.py functionality will be available to restore them to the dataweb.db database in Sqlite portable.
 
-Paso 6: Las funcionalidades para las consultas de los siguientes servicios endpoint estan disponibles. 
-metodo GET - http://127.0.0.1:3000/api/v1/query1, obtiene por trimestre la cantidad de empleados contratados por departaments y job del año 2021.
-metodo GET - http://127.0.0.1:3000/api/v1/query2, obtiene la cantidad de empleados contratados por departaments que son mayores al promedio de contrataciones del año 2021.
+Step 6: The functionalities for queries of the following endpoint services are available. GET method - http://127.0.0.1:3000/api/v1/query1 , obtains per quarter the number of employees hired by departments and jobs for the year 2021. GET method - http://127.0.0.1:3000/api/ v1/query2 , obtains the number of employees hired by departments that are greater than the average hiring for the year 2021.
 
 
-# Especificaciones Tecnicas
-El desarrollo de los servicios endpoint, las funcionalidades de transformacion de formato, backup en archivos avro y restauracion de tablas, fueron en el sistema operativa windows 10.
+# Technical specifications
+The development of the endpoint services, the format transformation functionalities, backup in avro files and restoration of tables, were in the Windows 10 operating system.
 
-La version de python utilizada fue 3.9, en un entorno virtual utilizando los siguientes pasos:
+The python version used was 3.9, in a virtual environment using the following steps:
 
-    --Crea un directorio para el entorno virtual 
+    --Create a directory for the virtual environment
     mkdir venv
     
-    --Entrar al directorio del entorno virtual
+    --Enter the virtual environment directory
     cd venv
 
-    --Crea el entorno virtual
+    --Create the virtual environment
      python -m venv myenv
 
-El archivo requirements con la lista de librerias fue creado
+The requirements file with the list of libraries was created
 
     --pip freeze > requirements.txt
        blinker==1.7.0
@@ -60,19 +58,17 @@ El archivo requirements con la lista de librerias fue creado
        werkzeug==3.0.1
        zipp==3.17.0
 
-Para realizar la simulacion y pruebas de los servicios endpoint, fue utilizada la plataforma api postman (cloud), link: https://www.postman.com/, deben tener una cuenta creada para acceder a todas las funcionalidades. 
-Para la configuracion del Metodo POST debe selecionar Body-->raw-->json
+To carry out the simulation and testing of the endpoint services, the postman api platform (cloud) was used, link: https://www.postman.com/ , you must have an account created to access all the functionalities. To configure the POST Method you must select Body-->raw-->json
        
-La base de datos utilizada fue la version local de SQLite y en la nube (cloud).
-La version en la nube (cloud) se crea con una extension google chrome web store , link:https://chromewebstore.google.com/detail/sqlite-viewer/bpedjnknnoaegoaejefbodcdjmjkbbea?hl=es&pli=1
+The database used was the local version of SQLite and in the cloud. The cloud version is created with a google chrome web store extension, link: https://chromewebstore.google.com/detail/sqlite-viewer/bpedjnknnoaegoaejefbodcdjmjkbbea?hl=es&pli=1
 
---Paso 1: Debe añadir extension
+--Step 1: You must add extension
 
---Paso 2: Debe subir la base de datos dataweb.db ubicada en la carpeta instancia, hacer click to load from your hard drive
+--Step 2: You must upload the dataweb.db database located in the instance folder, click to load from your hard drive
 
---Paso 3: Pegar la siguiente consulta en el editor de texto para listar las tablas de la base de datos.
+--Step 3: Paste the following query into the text editor to list the database tables.
 
-     --Consultas 
+     --Querys 
          SELECT `name`, `sql`
          FROM `sqlite_master`
          WHERE type='table';
@@ -81,6 +77,6 @@ La version en la nube (cloud) se crea con una extension google chrome web store 
          SELECT * FROM jobs
          SELECT * FROM hired_employees
 
- Esta alternativa u opcion es para revisar los resultados de las tablas de la base de datos SQLite en la nube (cloud).
+This alternative or option is to review the results of the SQLite database tables in the cloud
 
-NOTA: La rama main es la que tiene los ultimos cambios https://github.com/sebastian2161/python_servicios_api_globant/tree/main
+NOTE: The main branch is the one with the latest changes https://github.com/sebastian2161/python_servicios_api_globant/tree/main
